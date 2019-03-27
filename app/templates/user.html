@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Page Title{% endblock %}
+
+{% block header %}
+    <h1>Page Heading</h1>
+{% endblock %}
+
+{% block content %}
+    Welcome to the site, {{ user.username }}.
+    {% if user.is_admin() %}
+        <p>You are an administrator.</p>
+    {% else %}
+        <p>You are NOT an administrator.</p>
+    {% endif %}
+
+    <p>Your password is HASHED as <strong><span style="color: red;">{{ user.password_hash }}</span></strong></p>
+{% endblock %}

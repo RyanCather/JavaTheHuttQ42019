@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+    <h1>{% block title %}Coffee is awesome !!!{% endblock %}</h1>
+{% endblock %}
+
+
+
+{% block content %}
+
+    <style>
+        .bs-example div[class^="col"] {
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    </style>
+
+
+    <p class="lead">Coffee is awesome for you.</p>
+    <p>Coffee is awesome because it's good for you.</p>
+    <p>&nbsp;</p>
+
+    <div class="bs-example">
+        <div class="row">
+            <div class="col-sm-4"><img class = "img-fluid" src="/static/mainpage1.jpg"> </div>
+            <div class="col-sm-4"><img class = "img-fluid" src="/static/mainpage2.jpg"></div>
+            <div class="col-sm-4"><img class = "img-fluid" src="/static/mainpage3.jpg"></div>
+        </div>
+    </div>
+
+{% endblock %}
