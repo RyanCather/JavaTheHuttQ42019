@@ -6,7 +6,7 @@ from app.models import User
 
 
 class LoginForm(FlaskForm):
-    '''
+    """
     Description:
         This Class configures the fields that is going to be used to login the user.
         This code is called from within routes.py
@@ -14,7 +14,7 @@ class LoginForm(FlaskForm):
         FlaskForm: passed automatically when called from routes.
     Outputs:
         None
-    '''
+    """
 
     # Set up the fields to display on screen
     username = StringField('Username', validators=[DataRequired()])
